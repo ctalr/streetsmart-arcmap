@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StreetSmartDockableWindow));
-            this.SuspendLayout();
-            // 
-            // StreetSmartDockableWindow
-            // 
-            resources.ApplyResources(this, "$this");
-            this.Name = "StreetSmartDockableWindow";
-            this.ResumeLayout(false);
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StreetSmartDockableWindow));
+      this.SuspendLayout();
+      // 
+      // StreetSmartDockableWindow
+      // 
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+      this.Name = "StreetSmartDockableWindow";
+      resources.ApplyResources(this, "$this");
+      this.ResumeLayout(false);
 
         }
 

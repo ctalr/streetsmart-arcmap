@@ -288,7 +288,24 @@ namespace StreetSmartArcMap.Logic
             var geoJson = layer.GenerateJson(recordings);
             var sld = layer.CreateSld(geoJson, color, outline);
 
+            // Feature property escape character sanitation.
+            foreach (var feature in geoJson.Features)
+            {
+              for (int i = 0; i < feature.Properties.Count; i++)
+              {
+                try
+                {
+                  if (feature.Properties[feature.Properties.Keys.ElementAt(i)].ToString().Contains("\\"))
+                  {
+                    feature.Properties[feature.Properties.Keys.ElementAt(i)] = feature.Properties[feature.Properties.Keys.ElementAt(i)].ToString().Replace("\\", "/");
+                  }
+                }
+                catch (Exception e){}
+              }
+            }
+
             IGeoJsonOverlay overlay;
+
             if (sld != null)
                 overlay = OverlayFactory.Create(geoJson, layerName, srsName, sld);
             else

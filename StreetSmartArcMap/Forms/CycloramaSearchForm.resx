@@ -126,10 +126,13 @@
     <value>Arial, 8.25pt</value>
   </data>
   <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 312</value>
+    <value>396, 384</value>
+  </data>
+  <data name="btnClose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
+    <value>100, 31</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
@@ -154,10 +157,13 @@
     <value>Top, Right</value>
   </data>
   <data name="btnFind.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 12</value>
+    <value>396, 15</value>
+  </data>
+  <data name="btnFind.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnFind.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
+    <value>100, 31</value>
   </data>
   <data name="btnFind.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -184,10 +190,13 @@
     <value>Arial, 8.25pt</value>
   </data>
   <data name="txtImageId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 13</value>
+    <value>16, 16</value>
+  </data>
+  <data name="txtImageId.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtImageId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 20</value>
+    <value>371, 23</value>
   </data>
   <data name="txtImageId.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -207,23 +216,14 @@
   <data name="lvResults.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="chImageId.Text" xml:space="preserve">
-    <value>ImageId</value>
-  </data>
-  <data name="chImageId.Width" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="chRecordedAt.Text" xml:space="preserve">
-    <value>RecordedAt</value>
-  </data>
-  <data name="chRecordedAt.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
   <data name="lvResults.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 43</value>
+    <value>16, 53</value>
+  </data>
+  <data name="lvResults.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="lvResults.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 263</value>
+    <value>479, 323</value>
   </data>
   <data name="lvResults.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -240,17 +240,29 @@
   <data name="&gt;&gt;lvResults.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="chImageId.Text" xml:space="preserve">
+    <value>ImageId</value>
+  </data>
+  <data name="chImageId.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="chRecordedAt.Text" xml:space="preserve">
+    <value>RecordedAt</value>
+  </data>
+  <data name="chRecordedAt.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
   <metadata name="backgroundImageSearch.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>384, 349</value>
+    <value>512, 430</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Find Cyclorama</value>

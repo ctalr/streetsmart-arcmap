@@ -175,7 +175,8 @@ namespace StreetSmartArcMap.Forms
             var items = new CultureInfo[]
             {
                 new CultureInfo(Configuration.Configuration.DefaultCulture),
-                new CultureInfo("fr")
+                new CultureInfo("fr"),
+                new CultureInfo("de")
             };
             cbCulture.Items.AddRange(items);
 

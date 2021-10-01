@@ -2,21 +2,21 @@
   <Name>Street Smart for ArcMap</Name>
   <AddInID>{ffb838b9-7a85-4470-b88c-62d3b8bbd64c}</AddInID>
   <Description>Street Smart for ArcMap
-Copyright © CycloMedia Technology 2019
+Copyright © CycloMedia Technology 2021
   </Description>
-  <Version>1.2.1</Version>
+  <Version>1.2.2</Version>
   <Image>Images\StreetSmartArcMapAddin.png</Image>
   <Author>CycloMedia</Author>
   <Company>CycloMedia</Company>
-  <Date>18-12-2019</Date>
+  <Date>01-10-2021</Date>
   <Targets>
-    <Target name="Desktop" version="10.4" />
+    <Target name="Desktop" version="10.8" />
   </Targets>
   <AddIn language="CLR" library="StreetSmartArcMap.dll" namespace="StreetSmartArcMap.AddIns">
     <ArcMap>
       <Extensions>
         <Extension id="CycloMedia_StreetSmartArcMap_StreetSmartExtension" class="StreetSmartExtension" productName="Street Smart for ArcMap" showInExtensionDialog="true" autoLoad="true">
-          <Description>Street Smart for ArcMap. Copyright © CycloMedia 2019.</Description>
+          <Description>Street Smart for ArcMap. Copyright © CycloMedia 2021.</Description>
         </Extension>
       </Extensions>
       <DockableWindows>

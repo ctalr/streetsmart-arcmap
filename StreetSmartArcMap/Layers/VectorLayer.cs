@@ -1063,13 +1063,13 @@ namespace StreetSmartArcMap.Layers
                 ESRI.ArcGIS.Geometry.IGeometry geometryBag = new GeometryBag();
                 var geometryCollection = geometryBag as IGeometryCollection;
                 ISpatialReference gsSpatialReference = (spatRel == null) ? ArcUtils.SpatialReference : spatRel.SpatialRef;
+                ISpatialReference cycloramaSRS = new SpatialReferenceEnvironmentClass().CreateSpatialReference(Config.ApiSSRAsInt);
 
                 double distance = CalculateDistance(gsSpatialReference);
 
                 foreach (var recordingLocation in recordingLocations)
                 {
-                    var envelope = CreateEnvelope(recordingLocation, distance, gsSpatialReference, SpatialReference);
-
+                    var envelope = CreateEnvelope(recordingLocation, distance, cycloramaSRS, SpatialReference);
                     geometryCollection.AddGeometry(envelope);
                 }
 
@@ -1128,6 +1128,10 @@ namespace StreetSmartArcMap.Layers
             result.SpatialReference = sourceSpatialReference;
             result.Project(targetSpatialReference);
 
+      var testA = sourceSpatialReference.FactoryCode;
+      var testB = targetSpatialReference.FactoryCode;
+      var testC = "";
+
             return result;
         }
 
@@ -1135,6 +1139,7 @@ namespace StreetSmartArcMap.Layers
         {
             var featureCursor = _featureClass.Search(spatialFilter, false);
             var featureCount = _featureClass.FeatureCount(spatialFilter);
+            if(featureCount > 1000) { featureCount = 0; }
             var shapeId = featureCursor.FindField(_featureClass.ShapeFieldName);
 
             for (int i = 0; i < featureCount; i++)
